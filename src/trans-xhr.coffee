@@ -66,7 +66,7 @@ exports.app =
 				res.setHeader('Access-Control-Allow-Origin', origin)
 				res.setHeader('Vary', 'Origin')
 				headers = req.headers['access-control-request-headers']
-				console.log(headers)
+
 				if headers
 						res.setHeader('Access-Control-Allow-Headers', headers)
 				return content
